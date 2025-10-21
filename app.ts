@@ -53,6 +53,8 @@ function firstWordFunc(x: string) :string | null {
     return x.split(" ")[0] ?? null
 }
 
-const firstWordArrow = (x :string) :string | null => {
+let firstWordArrow : (x :string) => string | null
+
+firstWordArrow = (x) => {
     return x.split(" ")[0] ?? null
 }

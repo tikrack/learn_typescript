@@ -38,7 +38,8 @@ function sum(x, y) {
 function firstWordFunc(x) {
     return x.split(" ")[0] ?? null;
 }
-const firstWordArrow = (x) => {
+let firstWordArrow;
+firstWordArrow = (x) => {
     return x.split(" ")[0] ?? null;
 };
 //# sourceMappingURL=app.js.map

@@ -1,18 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Car1 {
-    model;
-    constructor(model) {
+class Model {
+    model = "";
+    set setModel(model) {
         this.model = model;
     }
     get getModel() {
         return this.model;
     }
-    set setModel(model) {
-        this.model = model;
-    }
 }
-let car1 = new Car1("401");
+class Car extends Model {
+}
+let car1 = new Car();
 car1.setModel = "12";
-console.log(car1.getModel);
+console.log(car1.model);
 //# sourceMappingURL=classes.js.map

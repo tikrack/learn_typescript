@@ -49,6 +49,10 @@ function sum(x :number, y :number) :number {
     return x + y
 }
 
-function firstWord(x: string) :string | null {
+function firstWordFunc(x: string) :string | null {
+    return x.split(" ")[0] ?? null
+}
+
+const firstWordArrow = (x :string) :string | null => {
     return x.split(" ")[0] ?? null
 }

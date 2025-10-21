@@ -35,7 +35,10 @@ let dir = Direction.Up;
 function sum(x, y) {
     return x + y;
 }
-function firstWord(x) {
+function firstWordFunc(x) {
     return x.split(" ")[0] ?? null;
 }
+const firstWordArrow = (x) => {
+    return x.split(" ")[0] ?? null;
+};
 //# sourceMappingURL=app.js.map

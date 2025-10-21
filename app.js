@@ -31,4 +31,11 @@ var Direction;
     Direction[Direction["Right"] = 4] = "Right";
 })(Direction || (Direction = {}));
 let dir = Direction.Up;
+// -------------------------Functions
+function sum(x, y) {
+    return x + y;
+}
+function firstWord(x) {
+    return x.split(" ")[0] ?? null;
+}
 //# sourceMappingURL=app.js.map

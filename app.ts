@@ -43,3 +43,12 @@ enum Direction {
 }
 
 let dir: Direction = Direction.Up
+
+// -------------------------Functions
+function sum(x :number, y :number) :number {
+    return x + y
+}
+
+function firstWord(x: string) :string | null {
+    return x.split(" ")[0] ?? null
+}

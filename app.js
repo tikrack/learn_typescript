@@ -42,4 +42,10 @@ let firstWordArrow;
 firstWordArrow = (x) => {
     return x.split(" ")[0] ?? null;
 };
+// *****Optional Parameter
+function print(x) {
+    if (x) {
+        alert(x);
+    }
+}
 //# sourceMappingURL=app.js.map

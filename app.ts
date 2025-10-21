@@ -58,3 +58,9 @@ let firstWordArrow : (x :string) => string | null
 firstWordArrow = (x) => {
     return x.split(" ")[0] ?? null
 }
+// *****Optional Parameter
+function print(x ?:string) {
+    if (x) {
+        alert(x)
+    }
+}

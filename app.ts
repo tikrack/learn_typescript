@@ -36,36 +36,52 @@ function log(message: string): void {
 
 // -------------------------Enum
 enum Direction {
-    Up = 1,
-    Down = 4,
-    Left = 3,
-    Right
+    Up = 1, Down = 4, Left = 3, Right
 }
 
 let dir: Direction = Direction.Up
 
 // -------------------------Functions
-function sum(x :number, y :number) :number {
+function sum(x: number, y: number): number {
     return x + y
 }
 
-function firstWordFunc(x: string) :string | null {
+function firstWordFunc(x: string): string | null {
     return x.split(" ")[0] ?? null
 }
 
-let firstWordArrow : (x :string) => string | null
+let firstWordArrow: (x: string) => string | null
 
 firstWordArrow = (x) => {
     return x.split(" ")[0] ?? null
 }
+
 // *****Optional Parameter
-function print(x ?:string) {
+function print(x ?: string) {
     if (x) {
         alert(x)
     }
 }
 
 // *****Rest Parameter
-function printInt(x :number, ...y: number[]) {
+function printInt(x: number, ...y: number[]) {
     console.log(x, y)
 }
+
+// -------------------------Object
+type MyType = {
+    name: string,
+    family: string,
+    age: number,
+    getFullName: () => string
+}
+
+let person: MyType = {
+    name: "mohamad",
+    family: "mohamadi",
+    age: 10,
+    getFullName: function () {
+        return this.name + " " + this.family
+    }
+}
+

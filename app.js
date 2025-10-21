@@ -52,4 +52,12 @@ function print(x) {
 function printInt(x, ...y) {
     console.log(x, y);
 }
+let person = {
+    name: "mohamad",
+    family: "mohamadi",
+    age: 10,
+    getFullName: function () {
+        return this.name + " " + this.family;
+    }
+};
 //# sourceMappingURL=app.js.map

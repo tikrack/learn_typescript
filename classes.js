@@ -5,26 +5,14 @@ class Car1 {
     constructor(model) {
         this.model = model;
     }
-    getModel() {
+    get getModel() {
         return this.model;
     }
-}
-class Car2 {
-    model;
-    constructor(model) {
+    set setModel(model) {
         this.model = model;
-    }
-    getModel() {
-        return this.model;
     }
 }
 let car1 = new Car1("401");
-let car2 = new Car2("206");
-console.log(car1.getModel());
-console.log(car2.getModel());
-/*
-* Public
-* Private
-* Protected
-*/ 
+car1.setModel = "12";
+console.log(car1.getModel);
 //# sourceMappingURL=classes.js.map

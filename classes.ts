@@ -5,27 +5,15 @@ class Car1 {
         this.model = model;
     }
 
-    getModel() {
+    get getModel() {
         return this.model;
     }
-}
 
-class Car2 {
-    constructor(public model: string) {}
-
-    getModel() {
-        return this.model;
+    set setModel(model: string) {
+        this.model = model;
     }
 }
 
 let car1 = new Car1("401");
-let car2 = new Car2("206");
-
-console.log(car1.getModel());
-console.log(car2.getModel());
-
-/*
-* Public
-* Private
-* Protected
-*/
+car1.setModel = "12"
+console.log(car1.getModel);

@@ -1,3 +1,5 @@
+// -------------------------Basic
+
 let str :string = "Hello World!"
 let int :number = 1
 let bool :boolean = false
@@ -16,5 +18,11 @@ let arr2 :any[] = [
     true
 ]
 
-// -------------------------Tupple
+// -------------------------Tuple
+
 let tuple :[number, string] = [10, "20"]
+
+// -------------------------Specially
+
+let nil :null = null
+let undef :undefined = undefined

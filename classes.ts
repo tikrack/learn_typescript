@@ -23,3 +23,9 @@ let car2 = new Car2("206");
 
 console.log(car1.getModel());
 console.log(car2.getModel());
+
+/*
+* Public
+* Private
+* Protected
+*/

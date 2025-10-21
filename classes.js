@@ -22,4 +22,9 @@ let car1 = new Car1("401");
 let car2 = new Car2("206");
 console.log(car1.getModel());
 console.log(car2.getModel());
+/*
+* Public
+* Private
+* Protected
+*/ 
 //# sourceMappingURL=classes.js.map

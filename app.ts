@@ -26,3 +26,18 @@ let tuple :[number, string] = [10, "20"]
 
 let nil :null = null
 let undef :undefined = undefined
+
+// -------------------------Union
+
+let username :string | null = null
+username = "Hello"
+
+let password :number | boolean = false
+password = 123456
+
+// -------------------------Void
+
+//the voids function not return any things!
+function log(message :string) :void {
+    console.log(message)
+}

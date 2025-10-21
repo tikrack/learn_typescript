@@ -48,4 +48,8 @@ function print(x) {
         alert(x);
     }
 }
+// *****Rest Parameter
+function printInt(x, ...y) {
+    console.log(x, y);
+}
 //# sourceMappingURL=app.js.map

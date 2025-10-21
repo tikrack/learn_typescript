@@ -64,3 +64,8 @@ function print(x ?:string) {
         alert(x)
     }
 }
+
+// *****Rest Parameter
+function printInt(x :number, ...y: number[]) {
+    console.log(x, y)
+}

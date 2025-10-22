@@ -10,6 +10,9 @@ class Model {
     }
 }
 class Car extends Model {
+    money(value) {
+        return value;
+    }
 }
 let car1 = new Car();
 car1.setModel = "12";

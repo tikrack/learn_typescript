@@ -8,10 +8,14 @@ abstract class Model {
     get getModel() {
         return this.model;
     }
+
+    abstract money(value: number) :number
 }
 
 class Car extends Model {
-
+    money(value: number) {
+        return value;
+    }
 }
 
 let car1 = new Car();

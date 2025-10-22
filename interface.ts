@@ -1,7 +1,16 @@
-interface SearchProp {
-    (search: string) :boolean;
+interface Person {
+    name: string | undefined;
+    family: string | undefined;
+    getName(): string | undefined;
 }
 
-const search: SearchProp = (search: string) => {
-    return true
+class Alex implements Person {
+    constructor(
+        public name: string,
+        public family: string,
+    ) {}
+
+    getName(): string | undefined {
+        return this.name;
+    }
 }
